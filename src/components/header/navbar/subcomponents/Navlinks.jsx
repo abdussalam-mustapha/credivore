@@ -1,29 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import "./navlinks.css"
 
-// import {GrClose} from "react-icons/gr"
 import {GiHamburgerMenu} from "react-icons/gi"
 
  const Navlinks = () => {
 
-//     const links = [
-//         {
-//           id: 1,
-//           link: "Home",
-//         },
-//         {
-//           id: 2,
-//           link: 'About',
-//         },
-//         {
-//           id: 3,
-//           link: 'Services'
-//         },
-//         {
-//           id: 3,
-//           link: 'Offers'
-//         }
-//       ]
 
     const [toggleMenu, setToggleMenu] = useState(true)
     const [screenWidth, setScreenWidth] = useState(window.innerwidth)

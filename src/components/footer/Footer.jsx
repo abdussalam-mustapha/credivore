@@ -27,25 +27,25 @@ const Footer = () => {
                 <div className="cols">
                     <span>Quick Links</span>
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Portfolio</a></li>
-                        <li><a href="">Services</a></li>
+                        <li><a href="goal.com">Home</a></li>
+                        <li><a href="goal.com">Portfolio</a></li>
+                        <li><a href="goal.com">Services</a></li>
                     </ul>
                 </div>
                 <div className="cols">
                     <span>Company</span>
                     <ul>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Contact</a></li>
-                        <li><a href="">Newsletter</a></li>
+                        <li><a href="goal.com">About</a></li>
+                        <li><a href="goal.com">Contact</a></li>
+                        <li><a href="goal.com">Newsletter</a></li>
                     </ul>
                 </div>
                 <div className="cols">
                     <span>Informations</span>
                     <ul>
-                        <li><a href="">Privacy</a></li>
-                        <li><a href="">Terms & Condition</a></li>
-                        <li><a href="">FAQs</a></li>
+                        <li><a href="goal.com">Privacy</a></li>
+                        <li><a href="goal.com">Terms & Condition</a></li>
+                        <li><a href="goal.com">FAQs</a></li>
                     </ul>
                 </div>
             </div>
