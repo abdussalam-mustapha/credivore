@@ -31,7 +31,7 @@
        }
        .para-head {
         margin-top: 2rem;
-        font-size: calc(1vw + 3rem);
+        font-size: calc(1vw + 2.7rem);
         color: var(--textColor);
        }
        .info-text {
@@ -64,13 +64,15 @@
        }
     }
     .col-2 {
-        padding-right: var(--paddingRight);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
 
         img {
-            height: 120%;
-            width: clamp(40rem, 1vw + 50rem, 54rem);
-            right: 12rem;
+            height: 500px;
+            width: calc(1vw + 50rem);
             position: relative;
+            object-fit: contain;
         }
     }
 }
@@ -82,6 +84,7 @@
         align-items: center;
         width: 100%;
         height: 100%;
+        overflow-x: hidden;
 
         .col-1 {
             width: 80%;
@@ -92,7 +95,7 @@
                 font-size: 1.5rem;
             }
             .para-head {
-                font-size: calc(1vw + 2rem);
+                font-size: calc(1vw + 1.8rem);
             }
             .inputDiv {
                 select {

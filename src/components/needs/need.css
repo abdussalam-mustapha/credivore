@@ -42,7 +42,7 @@
   font-weight: 600;
 }
 .need-section .col-2 h3 {
-  font-size: 2.5rem;
+  font-size: calc(1vw + 1.5rem);
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1.5rem;

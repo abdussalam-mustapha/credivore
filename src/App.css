@@ -8,6 +8,7 @@
     --boxShadow: 0 2px 8px 4px rgba(153, 151, 151, 0.425);
     --borderRadius: 0; 
     --sectionBg: rgb(230, 240, 243);
+    --fontSize: 1rem;
 }
 
 .section {
@@ -62,7 +63,7 @@ a {
 
 .text-header {
     font-weight: 700;
-    font-size: 2rem;
+    font-size: calc(1vw + 1.5rem);
     margin-bottom: 10px;
 }
 

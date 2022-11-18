@@ -18,6 +18,10 @@
 
 .service-section {
     background: var(--backgroundTwo);
+
+    .text-header {
+
+    }
 }
 
 
@@ -30,10 +34,18 @@
         }
         .text-main {
             margin-bottom: 1.5rem;
+
         }
         .text-two {
             margin: 1.5rem 0;
         }
         
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .center {
+        padding: 3rem 2rem 0 !important;
     }
 }

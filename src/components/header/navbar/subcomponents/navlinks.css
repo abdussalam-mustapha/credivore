@@ -39,6 +39,7 @@ nav .toggle {
   top: 7px;
   padding: 5px;
   font-size: 30px;
+  color: var(--textColor);
 }
 
 @media screen and (max-width: 700px) {
@@ -64,5 +65,6 @@ nav .toggle {
   }
   nav .toggle {
     display: block !important;
+    color: var(--textColor);
   }
 }/*# sourceMappingURL=navlinks.css.map */

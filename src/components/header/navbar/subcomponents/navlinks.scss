@@ -40,6 +40,7 @@ nav {
     top: 7px;
     padding: 5px;
     font-size: 30px;
+    color: var(--textColor);
   }
 }
 
@@ -69,6 +70,7 @@ nav {
     }
     .toggle {
       display: block !important;
+      color: var(--textColor);
     }
   }
 }

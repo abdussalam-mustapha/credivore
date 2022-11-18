@@ -5,6 +5,12 @@ import "aos/dist/aos.css"
 
 const Offercard = () => {
 
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  })
+
   const offers = [
     {
         id: 1,
@@ -38,7 +44,7 @@ const Offercard = () => {
             const {id, title, note} = offer
     
             return (
-                <div className="offer-card">
+                <div className="offer-card" data-aos="fade-up" data-aos-duration="2000">
             <div className="icon" style={{background: offers[index].backgroundColor}} key={index}>0{id}</div>
             <p className="title">{title}</p>
             <p className="note">{note}</p>
