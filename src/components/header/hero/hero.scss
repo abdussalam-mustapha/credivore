@@ -31,7 +31,7 @@
        }
        .para-head {
         margin-top: 2rem;
-        font-size: var(--fontSizeHead);
+        font-size: calc(1vw + 3rem);
         color: var(--textColor);
        }
        .info-text {
@@ -65,19 +65,17 @@
     }
     .col-2 {
         padding-right: var(--paddingRight);
-        
-        
 
         img {
             height: 120%;
-            width: 54rem;
+            width: clamp(40rem, 1vw + 50rem, 54rem);
             right: 12rem;
             position: relative;
         }
     }
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 800px){
     .heroSection {
         flex-direction: column;
         justify-content: center;
@@ -93,6 +91,9 @@
             .about-text {
                 font-size: 1.5rem;
             }
+            .para-head {
+                font-size: calc(1vw + 2rem);
+            }
             .inputDiv {
                 select {
                     width: 50%;
@@ -106,11 +107,8 @@
         }
         .col-2 {
             display: none;
-
-            img {
-                height: 70%;
-                width: 80%
-            }
         }
     }
 }
+
+

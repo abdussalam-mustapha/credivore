@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./offercard.css"
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 const Offercard = () => {
 
@@ -23,6 +25,11 @@ const Offercard = () => {
         note: "Choose the offer with the best term, and if approved get your funds or new accounts right away"
     }
   ]
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh()
+   }, [])
 
   return (
     <div className='card-container'>

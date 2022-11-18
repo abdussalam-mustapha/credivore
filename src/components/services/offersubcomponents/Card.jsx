@@ -1,5 +1,7 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import "./card.css"
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 import {MdTravelExplore} from  "react-icons/md"
 import {GiTakeMyMoney} from  "react-icons/gi"
@@ -62,6 +64,11 @@ const Card = () => {
     }
    ]
 
+   useEffect(() => {
+    AOS.init();
+    AOS.refresh()
+   }, [])
+
 
   return (
     <section className='cardSection'>
@@ -71,7 +78,7 @@ const Card = () => {
             const {title, note, Icon, } = content
 
                 return (
-        <div className="card">
+        <div className="card" data-aos="fade-up" data-aos-duration="2000">
             <div className="card-icon" style={{background: contents[index].backgroundColor}} key={index}>
                 <Icon className="icon" style={{color: contents[index].color}} key={index}/>
             </div>

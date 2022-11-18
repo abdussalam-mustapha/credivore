@@ -31,7 +31,7 @@
 }
 .heroSection .col-1 .para-head {
   margin-top: 2rem;
-  font-size: var(--fontSizeHead);
+  font-size: calc(1vw + 3rem);
   color: var(--textColor);
 }
 .heroSection .col-1 .info-text {
@@ -66,12 +66,12 @@
 }
 .heroSection .col-2 img {
   height: 120%;
-  width: 54rem;
+  width: clamp(40rem, 1vw + 50rem, 54rem);
   right: 12rem;
   position: relative;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .heroSection {
     flex-direction: column;
     justify-content: center;
@@ -87,6 +87,9 @@
   .heroSection .col-1 .about-text {
     font-size: 1.5rem;
   }
+  .heroSection .col-1 .para-head {
+    font-size: calc(1vw + 2rem);
+  }
   .heroSection .col-1 .inputDiv select {
     width: 50%;
     height: 30px;
@@ -97,9 +100,5 @@
   }
   .heroSection .col-2 {
     display: none;
-  }
-  .heroSection .col-2 img {
-    height: 70%;
-    width: 80%;
   }
 }/*# sourceMappingURL=hero.css.map */

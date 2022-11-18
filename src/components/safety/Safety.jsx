@@ -1,12 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./safety.css"
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 import insurance from "../../imgs/insurance.jpg"
 
 const Safety = () => {
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh()
+  })
+
   return (
     <div className='safety-section section'>
-      <div className="col-1">
+      <div className="col-1" data-aos="fade-left" data-aos-duration="2000">
         <p className="text-main">SAFETY</p>
         <h3 className="text-header">
             Your card scores always safe and secure
@@ -23,7 +31,7 @@ const Safety = () => {
         </div>
         <button className="btn">See Offers</button>
       </div>
-      <div className="col-2">
+      <div className="col-2" data-aos="fade-right" data-aos-duration="2000">
         <img src={insurance} alt="" />
       </div>
     </div>

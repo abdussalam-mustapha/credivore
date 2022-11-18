@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Faq from "react-faq-component"
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 import "./faqs.css"
 
@@ -33,8 +35,13 @@ const data = {
 
 
 const Faqs = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh()
+  }, [])
+
   return (
-    <div className='faq-section center'>
+    <div data-aos="fade-up" data-aos-duration="2500" className='faq-section center'>
       <p className="text-main">FAQS</p>
       <h3 className="text-header">Frequently Asked Questions</h3>
       <div className="faqDiv">

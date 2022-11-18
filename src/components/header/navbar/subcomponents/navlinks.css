@@ -42,16 +42,13 @@ nav .toggle {
 }
 
 @media screen and (max-width: 700px) {
-  nav {
-    z-index: 100;
-  }
   nav .list {
     flex-direction: column;
     height: auto;
     width: 400%;
     position: relative;
     left: -300%;
-    top: 0;
+    top: -10px;
     background-color: rgba(255, 255, 255, 0.74);
   }
   nav .list .items {

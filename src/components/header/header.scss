@@ -13,6 +13,7 @@
     background: var(--PrimaryColor);
     height: 89.5vh;
     height: 100%;
+    padding-bottom: calc(1vh + 2rem);
 }
 
 @media screen and (max-width: 480px) {
