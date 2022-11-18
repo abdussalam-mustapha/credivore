@@ -1,0 +1,64 @@
+:root {
+  --PrimaryColor: rgb(2, 2, 212);
+  --SecondaryColor: rgb(247, 19, 57);
+  --hoverColor: #fff;
+  --hoverText: rgb(247, 19, 57);
+  --PrimaryPadding: 1rem;
+  --primaryMargin: 1rem;
+  --boxShadow: 0 2px 8px 4px rgba(153, 151, 151, 0.425);
+  --borderRadius: 10px;
+  --fontSize: 1rem;
+  --fontSizeHead: 1.8rem;
+  --fontWeight: 500;
+  --textColor: #fff;
+  --paddingLeft: 10rem;
+  --paddingRight: 5rem;
+}
+
+.safety-section {
+  padding-top: 6rem;
+  display: flex;
+}
+.safety-section .col-1 {
+  padding-left: var(--paddingLeft);
+  padding-top: 1rem;
+}
+.safety-section .col-1 .textDiv {
+  margin: 2rem 0;
+}
+.safety-section .col-1 .btn {
+  width: 120px;
+  height: 45px;
+  color: var(--textColor);
+}
+.safety-section .col-2 {
+  padding-bottom: 6rem;
+}
+.safety-section .col-2 img {
+  width: calc(1vw + 25rem);
+  height: 25rem;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 700px) {
+  .safety-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 0;
+  }
+  .safety-section .col-1 {
+    padding: 0;
+  }
+  .safety-section .col-2 {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+  }
+  .safety-section .col-2 img {
+    width: calc(1vw + 18rem);
+    height: 18rem;
+  }
+}/*# sourceMappingURL=safety.css.map */

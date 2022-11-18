@@ -1,0 +1,67 @@
+:root {
+    --PrimaryColor: rgb(2, 2, 212);
+    --SecondaryColor: rgb(247, 19, 57);
+    --hoverColor: #fff;
+    --hoverText: rgb(247, 19, 57);
+    --PrimaryPadding: 1rem;
+    --primaryMargin: 1rem;
+    --boxShadow: 0 2px 8px 4px rgba(153, 151, 151, 0.425);
+    --borderRadius: 10px;
+    --fontSize: 1rem;
+    --fontSizeHead: 1.8rem;
+    --fontWeight: 500;
+    --textColor: #fff;
+    --paddingLeft: 10rem; 
+    --paddingRight: 5rem;  
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem var(--paddingRight) 0 var(--paddingLeft);
+
+    .offer-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 0 2rem;
+        padding-right: 1.5rem;
+
+        .icon {
+            color: var(--textColor);
+            font-size: 2.5rem;
+            border-radius: var(--borderRadius);
+            box-shadow: 0 0 0, 0.3;
+            height: 60px;
+            width: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1.5rem 0;
+        }
+        .title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin: 1rem 0;
+        }
+        .note {
+            line-height: 1.5;
+        }
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .card-container {
+        flex-direction: column;
+        width: 100%;
+        padding-left: 10%;
+        justify-content: center;
+        align-items: center;
+    }
+    .offer-card {
+        width: 100%;
+    }
+}

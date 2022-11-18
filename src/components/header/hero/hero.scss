@@ -1,0 +1,116 @@
+:root {
+    --PrimaryColor: rgb(2, 2, 212);
+    --SecondaryColor: rgb(247, 19, 57);
+    --hoverColor: #fff;
+    --hoverText: rgb(247, 19, 57);
+    --PrimaryPadding: 1rem;
+    --primaryMargin: 1rem;
+    --boxShadow: 0 2px 8px 4px rgba(153, 151, 151, 0.425);
+    --borderRadius: 10px;
+    --paddingLeft: 10rem; 
+    --paddingRight: 20%;
+    --fontSize: 1rem;
+    --fontSizeHead: 3rem;
+    --fontWeight: 500;
+    --textColor: #fff;  
+}
+
+.heroSection {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+
+    .col-1 {
+       margin-top: 1.5rem;
+       padding: 6rem 0 0 var(--paddingLeft);
+       
+       .about-text {
+        margin-top: 2rem;
+        color: var(--textColor);
+       }
+       .para-head {
+        margin-top: 2rem;
+        font-size: var(--fontSizeHead);
+        color: var(--textColor);
+       }
+       .info-text {
+        margin-top: 2rem;
+        font-size: var(--fontSize);
+        color: var(--textColor);
+       }
+       .inputDiv {
+        margin-top: 2rem;
+        color: var(--textColor);
+
+        select {
+            background: transparent;
+            height: 3rem;
+            width: calc(1vw + 15rem);
+            border-radius: 10px;
+            border: 1px solid #fff;
+            color: --textColor;
+            margin: 0 3px;
+        } 
+        .btn {
+            color: var(--textColor);
+            background: var(--SecondaryColor);
+            height: 3rem;
+            width: calc(1vw + 9rem);
+            border: none;
+            border-radius: 10px;
+            margin: 0 3px;
+        }
+       }
+    }
+    .col-2 {
+        padding-right: var(--paddingRight);
+        
+        
+
+        img {
+            height: 120%;
+            width: 54rem;
+            right: 12rem;
+            position: relative;
+        }
+    }
+}
+
+@media screen and (max-width: 700px){
+    .heroSection {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        .col-1 {
+            width: 80%;
+            padding: 0;
+            margin: 0;
+
+            .about-text {
+                font-size: 1.5rem;
+            }
+            .inputDiv {
+                select {
+                    width: 50%;
+                    height: 30px;
+                }
+                .btn {
+                    width: 5rem;
+                    height: 30px;
+                }
+            }
+        }
+        .col-2 {
+            display: none;
+
+            img {
+                height: 70%;
+                width: 80%
+            }
+        }
+    }
+}

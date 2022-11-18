@@ -1,0 +1,104 @@
+:root {
+    --PrimaryColor: rgb(2, 2, 212);
+    --SecondaryColor: rgb(247, 19, 57);
+    --hoverColor: #fff;
+    --hoverText: rgb(247, 19, 57);
+    --PrimaryPadding: 1rem;
+    --primaryMargin: 1rem;
+    --boxShadow: 0 2px 8px 4px rgba(153, 151, 151, 0.425);
+    --borderRadius: 10px;
+    --fontSize: 1rem;
+    --fontSizeHead: 1.8rem;
+    --fontWeight: 500;
+    --textColor: #fff;
+    --paddingLeft: 10rem; 
+    --paddingRight: 5rem;  
+}
+
+.footer {
+    background: var(--PrimaryColor);
+    color: var(--textColor);
+    padding: 2rem 3rem 1rem 3rem;
+
+    .newsletter {
+        line-height: 3;
+
+        .newsletter-btn {
+            height: 45px;
+            width: 120px;
+            color: var(--textColor);
+        }
+        input {
+            width: 300px;
+            margin: 0 10px;
+            height: 45px;
+            border-radius: 3px;
+            border: none;
+            margin-top: 3rem;
+        }
+    }
+    hr {
+        margin: 3rem;
+        height: 1px;
+        opacity: 0.5;
+    }
+    .footer-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .cols {
+            width: 20%;
+            text-align: left;
+            margin: 0 1.5rem;
+        }
+        .compare {
+            width: 30%;
+            text-align: left;
+        }
+    }
+    .center {
+        padding-top: 3rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+
+        .newsletter {
+            line-height: 2;
+
+            .newsletter-btn {
+                width: 6rem;
+                height: 30px;
+            }
+            input {
+                height: 30px;
+                width: 150px;
+                margin: 1.5rem 10px 0 0;
+            }
+            hr {
+                margin: 0;
+            }
+        }
+
+        .footer-nav {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 0;
+    
+            .cols {
+                width: 60%;
+                text-align: left;
+                margin-top: 2rem;
+
+                span {
+                    font-weight: 600;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}

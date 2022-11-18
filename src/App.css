@@ -1,0 +1,84 @@
+:root {
+    --PrimaryColor: rgb(2, 2, 212);
+    --SecondaryColor: rgb(247, 19, 57);
+    --hoverColor: #fff;
+    --hoverText: rgb(247, 19, 57);
+    --PrimaryPadding: 1rem;
+    --primaryMargin: 1rem;
+    --boxShadow: 0 2px 8px 4px rgba(153, 151, 151, 0.425);
+    --borderRadius: 0; 
+    --sectionBg: rgb(230, 240, 243);
+}
+
+.section {
+    background: var(--sectionBg);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn {
+    background: var(--SecondaryColor);
+    padding: calc(var(--PrimaryPadding) - 0.5rem);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.icon {
+    font-size: 25px;
+}
+
+.col-1 {
+    width: 53%;
+    margin: 0 auto;
+}
+
+.col-2 {
+    width: 46%;
+   
+}
+
+.center {
+    text-align: center;
+    padding: 8rem 8rem 0;
+    line-height: 2;
+}
+
+.text-main {
+    font-size: var(--fontSize);
+    line-height: 1.5;
+    color: var(--PrimaryColor);
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.text-header {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.text-two {
+    font-size: var(--fontSize);
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 480px) {
+    .center {
+        padding: 1rem;
+    }
+    .col-1 {
+        width: 80%;
+    }
+    .col-2 {
+        width: 80%;
+    }
+}

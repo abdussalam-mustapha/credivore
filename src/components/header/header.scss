@@ -1,0 +1,22 @@
+:root {
+    --PrimaryColor: rgb(2, 2, 212);
+    --SecondaryColor: rgb(247, 19, 57);
+    --hoverColor: #fff;
+    --hoverText: rgb(247, 19, 57);
+    --PrimaryPadding: 1rem;
+    --primaryMargin: 1rem;
+    --boxShadow: 0 2px 8px 4px rgba(153, 151, 151, 0.425);
+    --borderRadius: 10px; 
+}
+
+.header {
+    background: var(--PrimaryColor);
+    height: 89.5vh;
+    height: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        padding-bottom: 3rem;
+    }
+}

@@ -1,0 +1,35 @@
+:root {
+    --PrimaryColor: rgb(2, 2, 212);
+    --SecondaryColor: rgb(247, 19, 57);
+    --hoverColor: #fff;
+    --hoverText: rgb(247, 19, 57);
+    --PrimaryPadding: 1rem;
+    --primaryMargin: 1rem;
+    --boxShadow: 0 2px 8px 4px rgba(153, 151, 151, 0.425);
+    --borderRadius: 10px;
+    --fontSize: 1rem;
+    --fontSizeHead: 1.8rem;
+    --fontWeight: 500;
+    --textColor: #fff;
+    --paddingLeft: 10rem; 
+    --paddingRight: 5rem;  
+}
+
+.faq-section {
+    padding: 5rem 0;
+
+    .text-header {
+        line-height: 1.5;
+    }
+    
+   .faqDiv {
+    width: 70%;
+    margin: auto;
+    
+
+    Faq {
+        font-size: 1rem;
+        border-radius: 10rem;
+    }
+   }
+}

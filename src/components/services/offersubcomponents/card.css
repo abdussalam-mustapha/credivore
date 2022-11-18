@@ -1,0 +1,70 @@
+:root {
+  --PrimaryColor: rgb(2, 2, 212);
+  --SecondaryColor: rgb(247, 19, 57);
+  --hoverColor: #fff;
+  --hoverText: rgb(247, 19, 57);
+  --PrimaryPadding: 1rem;
+  --primaryMargin: 1rem;
+  --boxShadow: 0 2px 8px 4px rgba(180, 178, 178, 0.226);
+  --borderRadius: 10px;
+  --paddingLeft: 10rem;
+  --paddingRight: 20%;
+  --fontSize: 1rem;
+  --fontSizeHead: 3rem;
+  --fontWeight: 500;
+  --textColor: #fff;
+  --backgroundTwo: rgb(240, 238, 238);
+}
+
+.cardSection {
+  background: var(--backgroundTwo);
+  display: flex;
+  padding: 5.5rem 8rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.cardSection .card {
+  background: rgb(243, 243, 243);
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 300px;
+  margin: 10px;
+  border-radius: var(--borderRadius);
+  box-shadow: var(--boxShadow);
+}
+.cardSection .card .card-icon {
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+.cardSection .card .card-icon .icon {
+  font-size: 2rem;
+  height: 3rem;
+  width: 3rem;
+}
+.cardSection .card .para-card {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1.1rem;
+}
+.cardSection .card .card-text {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 480px) {
+  .cardSection {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .cardSection .card {
+    width: 80%;
+  }
+}/*# sourceMappingURL=card.css.map */

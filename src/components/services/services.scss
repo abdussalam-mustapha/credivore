@@ -1,0 +1,39 @@
+:root {
+    --PrimaryColor: rgb(2, 2, 212);
+    --SecondaryColor: rgb(247, 19, 57);
+    --hoverColor: #fff;
+    --hoverText: rgb(247, 19, 57);
+    --PrimaryPadding: 1rem;
+    --primaryMargin: 1rem;
+    --boxShadow: 0 2px 8px 4px rgba(180, 178, 178, 0.226);
+    --borderRadius: 10px;
+    --paddingLeft: 10rem; 
+    --paddingRight: 20%;
+    --fontSize: 1rem;
+    --fontSizeHead: 3rem;
+    --fontWeight: 500;
+    --textColor: #fff;
+    --backgroundTwo: rgb(240, 238, 238);  
+}
+
+.service-section {
+    background: var(--backgroundTwo);
+}
+
+
+@media screen and (max-width: 480px) {
+    .service-section {
+        padding-top: 4rem;
+
+        .text-header {
+            line-height: 1.2;
+        }
+        .text-main {
+            margin-bottom: 1.5rem;
+        }
+        .text-two {
+            margin: 1.5rem 0;
+        }
+        
+    }
+}
