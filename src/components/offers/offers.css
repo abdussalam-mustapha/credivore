@@ -13,4 +13,11 @@
   --textColor: #fff;
   --paddingLeft: 10rem;
   --paddingRight: 5rem;
+}
+
+.offer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=offers.css.map */

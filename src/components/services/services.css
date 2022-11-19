@@ -18,7 +18,12 @@
 
 .service-section {
   background: var(--backgroundTwo);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 @media screen and (max-width: 480px) {
   .service-section {
     padding-top: 4rem;
@@ -35,6 +40,6 @@
 }
 @media screen and (max-width: 800px) {
   .center {
-    padding: 3rem 2rem 0 !important;
+    padding: 3rem 1rem 0 !important;
   }
 }/*# sourceMappingURL=services.css.map */

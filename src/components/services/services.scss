@@ -18,10 +18,10 @@
 
 .service-section {
     background: var(--backgroundTwo);
-
-    .text-header {
-
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 

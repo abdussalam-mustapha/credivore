@@ -15,8 +15,9 @@
     --paddingRight: 5rem;  
 }
 
-// .offer-container {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
+.offer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

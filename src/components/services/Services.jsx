@@ -16,7 +16,7 @@ const Services = () => {
 
 
   return (
-    <div className='service-section'>
+    <div className='service-section center'>
       <div className="header-text center" data-aos="fade-up" data-aos-duration="1500">
         <p className='text-main' data-aos="fade-up" data-aos-duration="2000">SERVICES</p>
         <h3 className='text-header' data-aos="fade-up" data-aos-duration="2500">Find the financial services you need</h3>
